@@ -1,21 +1,19 @@
-
 // Phần banner-1
-.link
-	.btn-more
-		color: #fff
-		background: #808dff
-		border-radius: 5rem
-		+mar(4rem null 6rem)
-		+pad(1rem 2rem)
-		+fw(bold)
-		display: inline-block
-	a
-		+fz(1rem)
-	+media-breakpoint-up(md)
-		&:hover
-			a
-				background: lighten(#808dff, 10%)
-				transition: .5s all ease-in-out
+// .link
+	// .btn-more
+	// 	color: #fff
+	// 	background: #808dff
+	// 	border-radius: 5rem
+	// 	+mar(2rem null 9rem)
+	// 	+pad(1rem 2rem)
+	// 	+fw(bold)
+	// 	display: inline-block
+	// 	+fz(1rem)
+	// +media-breakpoint-up(md)
+	// 	&:hover
+	// 		a
+	// 			background: lighten(#808dff, 10%)
+	// 			transition: .5s all ease-in-out
 .banner-1
 	background-image: url('../img/background_1.png')
 	background-size: cover
@@ -45,6 +43,15 @@
 			color: #ffffffd4
 			+fz(1rem)
 			+mar(.5rem)
+		.btn-more
+			color: #fff
+			background: #808dff
+			border-radius: 5rem
+			+mar(2rem null 9rem)
+			+pad(1rem 2rem)
+			+fw(bold)
+			display: inline-block
+			+fz(1rem)
 	.laptop
 		figure
 			img
@@ -88,6 +95,7 @@
 			.btn-more
 				&:hover
 					background: #374bff
+					transition: .3s all ease-in-out
 		.laptop
 			figure
 				img
@@ -102,6 +110,7 @@
 	+media-breakpoint-up(md)
 		+mar(7rem 0 0 0)
 	.container
+		text-align: center
 		.content-ser
 			.title
 				+mar(2rem 0)
@@ -111,28 +120,32 @@
 					+fw(700)
 					+mar(0 0 .5rem 0)
 				h3
-					+mar(0 0 1.5rem 0)
+					+mar(0 0 3rem 0)
 					position: relative
 					+fw(700)
 					&:before
 						content: ''
 						display: block
-						width: 20%
+						width: 15%
 						height: 3px
-						+pos(abs, null null -10px 0)
+						+pos(abs, null null -15px 50%)
+						transform: translateX(-50%)
 						background: #FF6B5C
 		.img-ser
 			text-align: center
 	+media-breakpoint-up(sm)
 		.container
+			text-align: left
 			.content-ser
 				.title
 					h3
 						+fz(2.2rem)
 						&:before
 							width: 12%
+							+pos(abs, null null -15px 6%)
 	+media-breakpoint-up(md)
 		.container
+			text-align: left
 			.content-ser
 				display: flex
 				align-items: center
@@ -140,6 +153,7 @@
 					h3
 						&:before
 							width: 20%
+							+pos(abs, null null -15px 10%)
 	+media-breakpoint-up(lg)
 		.container
 			+pad(0 8rem)
@@ -148,10 +162,12 @@
 					h3
 						&:before
 							width: 15%
+							+pos(abs, null null -15px 8%)
 
 // Phần Portfolio
 
 .portfolio
+	+mar(4rem 0 2rem 0)
 	background-image: url('../img/background_2.png')
 	background-size: cover
 	background-position: center center
@@ -168,15 +184,28 @@
 	.title
 		color: $whites
 		+mar(2rem)
+		position: relative
 		h2
 			+fz(2.5rem)
+			+mar(0 0 2.5rem 0)
+			&:before
+				content: ''
+				display: block
+				width: 15%
+				height: 3px
+				background: $whites
+				transform: translateX(-50%)
+				+media-breakpoint-up(md)
+					+pos(abs, 43% null null 50%)
+				+media-breakpoint-up(lg)
+					width: 10%
 		.desc
 			color: #ffffffd4
 			+fz(1.2rem)
 	.port-img
 		figure
 			img
-				+pos(abs, 135% null null 50%)
+				+pos(abs, 115% null null 50%)
 				max-width: 75%
 				transform: translateX(-50%)
 	+media-breakpoint-up(sm)
@@ -200,6 +229,7 @@
 				img
 					+pos(abs, 125% null null 50%)
 					max-width: 45%	
+// Phần Work
 .work
 	background: #fff
 	.title 
@@ -221,6 +251,9 @@
 				color: #b4b4b4
 				line-height: 25px
 				+pad(0rem null .5rem)
+			+media-breakpoint-up(sm)
+				+pad(0 .5rem)
+
 	.box.box1
 		border-bottom: 4px solid #3c2b4b
 	.box.box2
@@ -229,10 +262,25 @@
 		border-bottom: 4px solid #8192ff
 	.box.box4
 		border-bottom: 4px solid #ffd04a
+	.btn-more
+		color: #fff
+		background: #808dff
+		border-radius: 5rem
+		+mar(3rem null 5rem)
+		+pad(1rem 2rem)
+		+fw(bold)
+		display: inline-block
+		+fz(1rem)
+		+media-breakpoint-up(lg)
+			&:hover
+				background: #374bff
+				transition: .3s all ease-in-out
+
+// Phần Comment
 .comment
 	background: #feecee
 	.item
-		+pad(8rem null 1rem)
+		+pad(4rem null 1rem)
 	.title
 		+mar(null null 3rem)
 		h2
@@ -286,7 +334,9 @@
 						right: -65px
 					&.owl-prev
 						left: -65px
-//- section
+			.box
+				figcaption
+// Phần Final
 .final
 	background-image: url(../img/background_3.png)
 	.title
@@ -298,6 +348,19 @@
 			line-height: 1.156
 			+media-breakpoint-up(md)
 				+fz(3.5rem)
+	.btn-more
+		color: #fff
+		background: #808dff
+		border-radius: 5rem
+		+mar(3rem null 5rem)
+		+pad(1rem 2rem)
+		+fw(bold)
+		display: inline-block
+		+fz(1rem)
+		+media-breakpoint-up(lg)
+			&:hover
+				background: #374bff
+				transition: .3s all ease-in-out
 	figure
 		+mar(null null 0rem)
 

@@ -1,20 +1,13 @@
 // Main
 $(document).ready(function() {
-    // Phần Slider
-    $('.home_banner1 .owl-carousel').owlCarousel({
-        items: 1,
-        nav: false,
-        dots: true,
-        autoplay: true,
-        loop: true,
-        navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
-    });
     // Phần Clients
     $('.comment .owl-carousel').owlCarousel({
-        loop: false,
+        loop: true,
         margin: 0,
         nav: true,
-        items: 1,
+		items: 1,
+		autoplay: true,
+		autoplayTimeout: 5000,
         dots: false,
         navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
         responsive: {
