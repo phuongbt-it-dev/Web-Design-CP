@@ -1,67 +1,196 @@
-/////////////////////////////////
-// Phần Slider
-/////////////////////////////////
-.home-slider
-	.owl-carousel
-		// Phần Slider
-		.item
-			position: relative
+// Phần banner-1
+	
+.banner-1
+	background-image: url('../img/background_1.png')
+	background-size: cover
+	background-position: center center
+	background-repeat: no-repeat
+	min-height: 550px
+	position: relative
+	text-align: center
+	+media-breakpoint-up(sm)
+		min-height: 650px
+	+media-breakpoint-up(md)
+		min-height: 750px
+	.logo
+		+mar(2rem 0 1.5rem 0)
+		figure
+			img
+				max-width: 55%
+				transition: .5s all ease-in-out
+	.title
+		h1
+			+fz(2rem)
+			+fw(700)
+			color: $whites
+			+mar(0 0 1.5rem 0)
+		p
+			+fw(100)
+			color: #ffffffd4
+			+fz(1rem)
+			+mar(.5rem)
+		.btn-more
+			text-transform: uppercase
+			background: #7D8AFF
+			color: $whites
+			+pad(.5rem 1.5rem)
+			border-radius: 20px
+			+fz(1rem)
+			+fw(600)
+			// letter-spacing: .5px
+			+mar(1.2rem 0 0 0)
+	.laptop
+		figure
+			img
+				max-width: 90%
+				+pos(abs, null null -6% 50%)
+				transform: translateX(-50%)
+	+media-breakpoint-up(sm)
+		.logo
+			figure
+				img
+					max-width: 70%
+					transition: .5s all ease-in-out
+		.title
+			h1
+				+fz(2.5rem)
+			p
+				+fz(1.1rem)
+			.btn-more
+				+fz(1.2rem)
+				+mar(1.5rem 0 0 0)
+		.laptop
+			figure
+				img
+					max-width: 80%
+	+media-breakpoint-up(md)
+		.title
+			h1
+				+fz(3rem)
+			p
+				+fz(1.2rem)
+			.btn-more
+				+fz(1rem)
+				+pad(1rem 2rem)
+				max-width: 65%
+		.laptop
+			figure
+				img
+					+pos(abs, null null -8% 50%)
+	+media-breakpoint-up(lg)
+		.title
+			.btn-more
+				&:hover
+					background: #374bff
+		.laptop
+			figure
+				img
+					max-width: 55%
+					+pos(abs, null null -7% 50%)
+
+
+// Phần Service
+
+.service
+	+mar(3rem 0 0 0)
+	+media-breakpoint-up(md)
+		+mar(7rem 0 0 0)
+	.container
+		.content-ser
 			.title
-				+pad(2rem 0)
-				height: 100%
-				width: 100%
+				+mar(2rem 0)
+				.title-ser
+					text-transform: uppercase
+					color: #FF6B5C
+					+fw(700)
+					+mar(0 0 .5rem 0)
+				h3
+					+mar(0 0 1.5rem 0)
+					position: relative
+					+fw(700)
+					&:before
+						content: ''
+						display: block
+						width: 20%
+						height: 3px
+						+pos(abs, null null -10px 0)
+						background: #FF6B5C
+		.img-ser
+			text-align: center
+	+media-breakpoint-up(sm)
+		.container
+			.content-ser
+				.title
+					h3
+						+fz(2.2rem)
+						&:before
+							width: 12%
+	+media-breakpoint-up(md)
+		.container
+			.content-ser
 				display: flex
 				align-items: center
-			+media-breakpoint-up(md)
 				.title
-					+pos(abs, 0 null null 0)
-					color: $whites
-					+text-shadow()
-					h2
-						+fz(3rem)
-					p 
-						+fz(1.5rem)
-						+lh(2rem)
-		// Phần Control
-		.owl-dots
-			margin-bottom: 2rem
-/////////////////////////////////
-// Phần News
-/////////////////////////////////
+					h3
+						&:before
+							width: 20%
+	+media-breakpoint-up(lg)
+		.container
+			+pad(0 8rem)
+			.content-ser
+				.title
+					h3
+						&:before
+							width: 15%
 
-.home-news
-	.item 
+// Phần Portfolio
+
+.portfolio
+	background-image: url('../img/background_2.png')
+	background-size: cover
+	background-position: center center
+	background-repeat: no-repeat
+	min-height: 650px
+	position: relative
+	+media-breakpoint-up(md)
+		min-height: 700px
+	.logo
+		+mar(5rem 0 1rem 0)
 		figure
-			.blockimg
-				+bor-rad(10px)
-				overflow: hidden
+			img
+				max-height: 2.5rem
+	.title
+		color: $whites
+		+mar(2rem)
+		h2
+			+fz(2.5rem)
+		.desc
+			color: #ffffffd4
+			+fz(1.2rem)
+	.port-img
+		figure
+			img
+				+pos(abs, 135% null null 50%)
+				max-width: 75%
+				transform: translateX(-50%)
+	+media-breakpoint-up(sm)
+		.title
+			h2
+				+fz(3rem)
+		.port-img
+			figure
 				img
-					width: 100%
-			figcaption 
-				margin-top: 1rem
-				h3 
-					+fz(1.1rem)
-					margin-bottom: 0
-				time 
-					+fz(.85rem)
-					color: darken($whites,30%)
-				p 
-					margin-top: .5rem
-					color: darken($whites,50%)
-/////////////////////////////////
-// Phần News
-/////////////////////////////////
-
-.home-clients
-	.owl-carousel
-		.item 
-			+pad(.5rem)
-		// Phần Control
-		.owl-nav
-			margin-bottom: 2rem
-			button 
-				i 
-					display: block
-					width: 2rem
-					height: 2rem
-					+lh(2rem)
+					+pos(abs, 105% null null 50%)
+					max-width: 80%
+	+media-breakpoint-up(md)
+		.port-img
+			figure
+				img
+					+pos(abs, 115% null null 50%)
+					max-width: 70%
+	+media-breakpoint-up(lg)
+		.port-img
+			figure
+				img
+					+pos(abs, 125% null null 50%)
+					max-width: 45%

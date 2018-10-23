@@ -1,78 +1,75 @@
 extends _layout/layout
 
-//- Các giá trị mặc định cho trang web
 block variables
 	- var title = 'Home'
 	- var description = 'Description for home page'
 	- var bodyclass = 'home'
 
-//- Phần khai báo body
 block body
 	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
-	section.home-slider
-		.owl-carousel.owl-theme
-			.item
-				img(src="./img/home_slider_1.jpg", alt="")
-				.title
-					.container
-						.row
-							.col-md-7
-								h2 Chúng tôi là FullStack Vietnam
-								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-			.item
-				img(src="./img/home_slider_1.jpg", alt="")
-				.title
-					.container
-						.row
-							.col-md-7
-								h2 Chúng tôi là FullStack Vietnam
-								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-			.item
-				img(src="./img/home_slider_1.jpg", alt="")
-				.title
-					.container
-						.row
-							.col-md-7
-								h2 Chúng tôi là FullStack Vietnam
-								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-	section.home-news
-		.container
-			.row
-				.col-md-4.item
-					figure
-						.blockimg
-							img(src="./img/home_news_1.jpg", alt="", srcset="")
-						figcaption
-							h3 
-								a(href="#") Chúng tôi là FullStack Vietnam
-							time 22/06/2018
-							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-				.col-md-4.item
-					figure
-						.blockimg
-							img(src="./img/home_news_2.jpg", alt="", srcset="")
-						figcaption
-							h3 
-								a(href="#") Chúng tôi là FullStack Vietnam
-							time 22/06/2018
-							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-				.col-md-4.item
-					figure
-						.blockimg
-							img(src="./img/home_news_3.jpg", alt="", srcset="")
-						figcaption
-							h3 
-								a(href="#") Chúng tôi là FullStack Vietnam
-							time 22/06/2018
-							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-	section.home-clients.mt-5
+	section.banner-1
 		.container
 			.row
 				.col
-					.owl-carousel.owl-theme
-						- for(x=1;x<10;x++)
-							.item
-								if (x < 7)
-									img(src="./img/clients_"+x+".png", alt="")
-								else
-									img(src="./img/clients_"+(x-3)+".png", alt="")
+					.logo
+						figure
+							img.img-fluid(src="./img/logo_min.png", alt="Landingpage-VN")
+			.row
+				.col
+					.title
+						h1 We Design Awesome Landing
+							<br> Pages That Will Blow The Minds 
+							<br> Of Your Visitors
+						p It takes 5 seconds for your website visitors to make an impression of you.
+							<br> We just want to make sure they say 'Wow!'
+						a.btn.btn-more(href="#") get your landing page now
+		.laptop
+			figure
+				img.img-fluid(src="./img/laptop_1.png", alt="Landingpage-VN")
+	//- Phần Service
+	section.service
+		.container
+			.row
+				.col
+					.row
+						.col-12.col-md-6.content-ser
+							.title
+								p.title-ser we design landing pages that
+								h3 Boost Your Revenue
+								p.desc Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, fugiat rerum. Maxime corporis, porro laboriosam odio inventore, eius ab repellendus ratione optio facilis suscipit officia nemo aut, voluptas debitis! Quae?
+						.col.col-md-6.img-ser
+							figure
+								img.img-fluid(src="./img/service_1.png", alt="Landingpage-VN")
+					.row
+						.col-12.col-md-6.img-ser
+							figure
+								img.img-fluid(src="./img/service_2.png", alt="Landingpage-VN")
+						.col.col-md-6.content-ser
+							.title
+								p.title-ser we design landing pages that
+								h3 Boost Your Revenue
+								p.desc Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, fugiat rerum. Maxime corporis, porro laboriosam odio inventore, eius ab repellendus ratione optio facilis suscipit officia nemo aut, voluptas debitis! Quae?
+					.row
+						.col-12.col-md-6.content-ser
+							.title
+								p.title-ser we design landing pages that
+								h3 Boost Your Revenue
+								p.desc Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, fugiat rerum. Maxime corporis, porro laboriosam odio inventore, eius ab repellendus ratione optio facilis suscipit officia nemo aut, voluptas debitis! Quae?
+						.col.col-md-6.img-ser
+							figure
+								img.img-fluid(src="./img/service_3.png", alt="Landingpage-VN")
+	//- Phần Portfolio	
+	section.portfolio
+		.container.text-center
+			.row
+				.col
+					.logo
+						figure
+							img.img-fluid(src="./img/icon.png", alt="Landingpage-VN")
+					.title
+						h2 Our Portfolio
+						p.desc Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis beatae odit fugiat quia ex nisi delectus in a aut voluptatem?
+					.port-img
+						figure
+							img.img-fluid(src="./img/laptop_2.png", alt="Landingpage-VN")
+
