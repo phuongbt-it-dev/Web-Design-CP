@@ -1,67 +1,118 @@
-/////////////////////////////////
-// Phần Slider
-/////////////////////////////////
-.home-slider
-	.owl-carousel
-		// Phần Slider
-		.item
-			position: relative
-			.title
-				+pad(2rem 0)
-				height: 100%
-				width: 100%
-				display: flex
-				align-items: center
-			+media-breakpoint-up(md)
-				.title
-					+pos(abs, 0 null null 0)
-					color: $whites
-					+text-shadow()
-					h2
-						+fz(3rem)
-					p 
-						+fz(1.5rem)
-						+lh(2rem)
-		// Phần Control
-		.owl-dots
-			margin-bottom: 2rem
-/////////////////////////////////
-// Phần News
-/////////////////////////////////
-
-.home-news
-	.item 
+.link
+	.btn-more
+		color: #fff
+		background: #808dff
+		border-radius: 5rem
+		+mar(4rem null 6rem)
+		+pad(1rem 2rem)
+		+fw(bold)
+		display: inline-block
+	a
+		+fz(1rem)
+	+media-breakpoint-up(md)
+		&:hover
+			a
+				background: lighten(#808dff, 10%)
+				transition: .5s all ease-in-out
+.work
+	background: #fff
+	.title 
+		h2
+			+pad(5rem null null)
+			+fw(bold)
+			+fz(3rem)
+	.box
+		+pad(1rem null)
+		box-shadow: 0px -1px 69px 2px #0000000d
+		border-radius: 5px
 		figure
-			.blockimg
-				+bor-rad(10px)
-				overflow: hidden
-				img
-					width: 100%
-			figcaption 
-				margin-top: 1rem
-				h3 
-					+fz(1.1rem)
-					margin-bottom: 0
-				time 
-					+fz(.85rem)
-					color: darken($whites,30%)
-				p 
-					margin-top: .5rem
-					color: darken($whites,50%)
-/////////////////////////////////
-// Phần News
-/////////////////////////////////
-
-.home-clients
+			+mar(1rem null .5rem)
+		figcaption
+			h3
+				+fz(1.2rem)
+				margin-bottom: .2rem
+			p
+				color: #b4b4b4
+				line-height: 25px
+				+pad(0rem null .5rem)
+	.box.box1
+		border-bottom: 4px solid #3c2b4b
+	.box.box2
+		border-bottom: 4px solid #ff6b5c
+	.box.box3,.box.box5
+		border-bottom: 4px solid #8192ff
+	.box.box4
+		border-bottom: 4px solid #ffd04a
+.comment
+	background: #feecee
+	.item
+		+pad(8rem null 1rem)
+	.title
+		+mar(null null 3rem)
+		h2
+			+fz(2rem)
+			+fw(bold)
 	.owl-carousel
-		.item 
-			+pad(.5rem)
-		// Phần Control
+		position: relative
+		+pad(null null 4rem)
+		.box
+			border-radius: 5px
+			background: #fff
+			figcaption
+				+pad(3rem 3rem)
+				h4
+					+mar(2rem null null)
+					+fz(1rem)
+					+fw(bold)
+				p
+					color: #767676
+					+fz(1rem)
+					&.ab
+						color: #ff6b5c
+						margin-bottom: 0
+		figure
+			display: flex
+			position: absolute
+			bottom: 2rem
+			right: 4rem
+			img
+				width: 4rem
+				height: 4rem
+				border-radius: 50%
 		.owl-nav
-			margin-bottom: 2rem
-			button 
-				i 
-					display: block
-					width: 2rem
-					height: 2rem
-					+lh(2rem)
+			button
+				width: 2rem
+				height: 2rem
+				background: #fff
+				+fz(1rem)
+				
+	+media-breakpoint-up(md)
+		.owl-carousel
+			position: relative
+			.owl-nav
+				button
+					width: 4rem
+					height: 4rem
+					border-radius: 50%
+					position: absolute
+					top: 30%
+					&.owl-next
+						right: -65px
+					&.owl-prev
+						left: -65px
+//- section
+.final
+	background-image: url(../img/background_3.png)
+	.title
+		h2
+			+pad(5rem 2rem null)
+			+fz(2rem)
+			+fw(bold)
+			color: #fff
+			line-height: 1.156
+			+media-breakpoint-up(md)
+				+fz(3.5rem)
+	figure
+		+mar(null null 0rem)
+
+
