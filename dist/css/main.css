@@ -6394,6 +6394,202 @@ footer {
     background: #b3bbff;
     transition: .5s all ease-in-out; } }
 
+.banner-1 {
+  background-image: url("../img/background_1.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 550px;
+  position: relative;
+  text-align: center; }
+  @media (min-width: 576px) {
+    .banner-1 {
+      min-height: 650px; } }
+  @media (min-width: 768px) {
+    .banner-1 {
+      min-height: 750px; } }
+  .banner-1 .logo {
+    margin-top: 2rem;
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+    margin-left: 0; }
+    .banner-1 .logo figure img {
+      max-width: 55%;
+      transition: .5s all ease-in-out; }
+  .banner-1 .title h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+    margin-left: 0; }
+  .banner-1 .title p {
+    font-weight: 100;
+    color: #ffffffd4;
+    font-size: 1rem;
+    margin: 0.5rem; }
+  .banner-1 .laptop figure img {
+    max-width: 90%;
+    position: absolute;
+    bottom: -6%;
+    left: 50%;
+    transform: translateX(-50%); }
+  @media (min-width: 576px) {
+    .banner-1 .logo figure img {
+      max-width: 70%;
+      transition: .5s all ease-in-out; }
+    .banner-1 .title h1 {
+      font-size: 2.5rem; }
+    .banner-1 .title p {
+      font-size: 1.1rem; }
+    .banner-1 .title .btn-more {
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-left: 0; }
+    .banner-1 .laptop figure img {
+      max-width: 80%; } }
+  @media (min-width: 768px) {
+    .banner-1 .title h1 {
+      font-size: 3rem; }
+    .banner-1 .title p {
+      font-size: 1.2rem; }
+    .banner-1 .title .btn-more {
+      font-size: 1rem;
+      padding-top: 1rem;
+      padding-right: 2rem;
+      padding-bottom: 1rem;
+      padding-left: 2rem;
+      max-width: 65%; }
+    .banner-1 .laptop figure img {
+      position: absolute;
+      bottom: -8%;
+      left: 50%; } }
+  @media (min-width: 992px) {
+    .banner-1 .title .btn-more:hover {
+      background: #374bff; }
+    .banner-1 .laptop figure img {
+      max-width: 55%;
+      position: absolute;
+      bottom: -7%;
+      left: 50%; } }
+
+.service {
+  margin-top: 3rem;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0; }
+  @media (min-width: 768px) {
+    .service {
+      margin-top: 7rem;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-left: 0; } }
+  .service .container .content-ser .title {
+    margin-top: 2rem;
+    margin-right: 0;
+    margin-bottom: 2rem;
+    margin-left: 0; }
+    .service .container .content-ser .title .title-ser {
+      text-transform: uppercase;
+      color: #FF6B5C;
+      font-weight: 700;
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: 0.5rem;
+      margin-left: 0; }
+    .service .container .content-ser .title h3 {
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: 1.5rem;
+      margin-left: 0;
+      position: relative;
+      font-weight: 700; }
+      .service .container .content-ser .title h3:before {
+        content: '';
+        display: block;
+        width: 20%;
+        height: 3px;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        background: #FF6B5C; }
+  .service .container .img-ser {
+    text-align: center; }
+  @media (min-width: 576px) {
+    .service .container .content-ser .title h3 {
+      font-size: 2.2rem; }
+      .service .container .content-ser .title h3:before {
+        width: 12%; } }
+  @media (min-width: 768px) {
+    .service .container .content-ser {
+      display: flex;
+      align-items: center; }
+      .service .container .content-ser .title h3:before {
+        width: 20%; } }
+  @media (min-width: 992px) {
+    .service .container {
+      padding-top: 0;
+      padding-right: 8rem;
+      padding-bottom: 0;
+      padding-left: 8rem; }
+      .service .container .content-ser .title h3:before {
+        width: 15%; } }
+
+.portfolio {
+  background-image: url("../img/background_2.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 650px;
+  position: relative; }
+  @media (min-width: 768px) {
+    .portfolio {
+      min-height: 700px; } }
+  .portfolio .logo {
+    margin-top: 5rem;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    margin-left: 0; }
+    .portfolio .logo figure img {
+      max-height: 2.5rem; }
+  .portfolio .title {
+    color: #ffffff;
+    margin: 2rem; }
+    .portfolio .title h2 {
+      font-size: 2.5rem; }
+    .portfolio .title .desc {
+      color: #ffffffd4;
+      font-size: 1.2rem; }
+  .portfolio .port-img figure img {
+    position: absolute;
+    top: 135%;
+    left: 50%;
+    max-width: 75%;
+    transform: translateX(-50%); }
+  @media (min-width: 576px) {
+    .portfolio .title h2 {
+      font-size: 3rem; }
+    .portfolio .port-img figure img {
+      position: absolute;
+      top: 105%;
+      left: 50%;
+      max-width: 80%; } }
+  @media (min-width: 768px) {
+    .portfolio .port-img figure img {
+      position: absolute;
+      top: 115%;
+      left: 50%;
+      max-width: 70%; } }
+  @media (min-width: 992px) {
+    .portfolio .port-img figure img {
+      position: absolute;
+      top: 125%;
+      left: 50%;
+      max-width: 45%; } }
+
 .work {
   background: #fff; }
   .work .title h2 {
