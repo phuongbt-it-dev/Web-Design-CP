@@ -6468,8 +6468,8 @@ footer {
       bottom: -8%;
       left: 50%; } }
   @media (min-width: 992px) {
-    .banner-1 .title .btn-more:hover {
-      background: #374bff; }
+    .banner-1 .title .btn-more a {
+      margin-bottom: 2rem; }
     .banner-1 .laptop figure img {
       max-width: 55%;
       position: absolute;
