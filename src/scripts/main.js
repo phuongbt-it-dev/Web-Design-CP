@@ -1,6 +1,6 @@
 // Main
 $(document).ready(function() {
-    // Phần Clients
+    // Phần Comment
     $('.comment .owl-carousel').owlCarousel({
         loop: true,
         margin: 0,
@@ -20,3 +20,5 @@ $(document).ready(function() {
         }
     });
 });
+
+AOS.init();

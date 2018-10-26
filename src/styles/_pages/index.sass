@@ -188,15 +188,18 @@
 		h2
 			+fz(2.5rem)
 			+mar(0 0 2.5rem 0)
+			position: relative
 			&:before
 				content: ''
 				display: block
-				width: 15%
 				height: 3px
 				background: $whites
+				width: 25%
 				transform: translateX(-50%)
+				+pos(abs, 110% null null 50%)
 				+media-breakpoint-up(md)
-					+pos(abs, 43% null null 50%)
+					+pos(abs, 110% null null 50%)
+					width: 15%
 				+media-breakpoint-up(lg)
 					width: 10%
 		.desc
@@ -205,8 +208,8 @@
 	.port-img
 		figure
 			img
-				+pos(abs, 115% null null 50%)
-				max-width: 75%
+				+pos(abs, 65px null null 50%)
+				max-width: 80%
 				transform: translateX(-50%)
 	+media-breakpoint-up(sm)
 		.title
@@ -227,7 +230,7 @@
 		.port-img
 			figure
 				img
-					+pos(abs, 125% null null 50%)
+					+pos(abs, 65px null null 50%)
 					max-width: 45%	
 // Phần Work
 .work
@@ -331,9 +334,9 @@
 					position: absolute
 					top: 30%
 					&.owl-next
-						right: -65px
+						right: -50px
 					&.owl-prev
-						left: -65px
+						left: -50px
 			.box
 				figcaption
 // Phần Final
