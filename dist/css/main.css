@@ -6741,6 +6741,7 @@ footer {
           left: -50px; } }
 
 .final {
+  min-height: 300px;
   background-image: url(../img/background_3.png); }
   .final .title h2 {
     padding-top: 5rem;
@@ -6771,6 +6772,7 @@ footer {
         background: #374bff;
         transition: .3s all ease-in-out; } }
   .final figure {
-    margin-bottom: 0rem; }
+    margin-bottom: 0rem;
+    min-height: 400px; }
 
 /*# sourceMappingURL=main.css.map */
